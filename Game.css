@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    cursor: none;
+}
+.min
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+button
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+    width: 150px;
+    height: 75px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 10;
+}
+.cursor
+{
+    position: absolute;
+    width: 40px;
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    transform: translate(-50%,-50%);
+}
+.blood
+{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    z-index: 10;
+}
+.terrorist
+{
+    width: 200px;
+    position: absolute;
+    z-index: 4;
+
+}
+.preloder
+{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    align-items: center;
+}
+@media screen and (min-width:200px) and (max-width:600px){
+    .terrorist{
+        width: 150px;
+    }
+    .blood
+    {
+        width: 150px;
+    }
+}
